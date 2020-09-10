@@ -1,5 +1,5 @@
 ### Twitter streaming setup
-This repository contains the code of what my setup looks like when trying to utilize twitter API to listen for tweets from some tech accounts like:
+This repository contains the code of what my setup looks like when trying to utilize twitter API to listen to tweets from some tech accounts like:
 
   -  "Microsoft",
   - "MSFTResearch",
@@ -35,3 +35,5 @@ This repository contains the code of what my setup looks like when trying to uti
  - It deletes those rules
  - It creates rules 
  - And streaming starts
+
+ 

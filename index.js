@@ -45,7 +45,7 @@ fetch("https://api.twitter.com/2/tweets/search/stream/rules", {
       i.data = [];
     }
     let ids = i.data.map((i) => i.id);
-    console.log(ids);
+    
     //delete rules
     let val = {
       delete: {
@@ -62,7 +62,6 @@ fetch("https://api.twitter.com/2/tweets/search/stream/rules", {
     })
       .then((i) => i.json())
       .then((i) => {
-        console.log(i, "sam");
         //create rules
         let val = {
           add: org.map(i=>{
@@ -82,7 +81,6 @@ fetch("https://api.twitter.com/2/tweets/search/stream/rules", {
         })
           .then((i) => i.json())
           .then((i) => {
-            console.log(i, "sam");
             https.get(
               "https://api.twitter.com/2/tweets/search/stream",
               {
